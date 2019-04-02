@@ -1,55 +1,21 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:xc9536xl-10vq44c
-LIBS:ams1117
+EESchema Schematic File Version 4
 LIBS:dodgypla-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "DodgyPLA"
 Date ""
-Rev "1"
+Rev "2"
 Comp ""
 Comment1 "Commodore 64 PLA Replacement"
-Comment2 "http://github.com/desaster/c64-dodgypla"
-Comment3 ""
+Comment2 "Heavily based on: http://github.com/desaster/c64-dodgypla"
+Comment3 "http://github.com/hackup/c64-dodgypla"
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_02x14_Counter_Clockwise J1
+L conn:Conn_02x14_Counter_Clockwise J1
 U 1 1 5A0C74B0
 P 2100 4600
 F 0 "J1" H 2150 5300 50  0000 C CNN
@@ -64,7 +30,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 4000 2900 3750
 $Comp
-L +5V #PWR01
+L power:+5V #PWR01
 U 1 1 5A0C762B
 P 2900 3750
 F 0 "#PWR01" H 2900 3600 50  0001 C CNN
@@ -79,7 +45,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 5300 1500 5700
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5A0C7674
 P 1500 5700
 F 0 "#PWR02" H 1500 5450 50  0001 C CNN
@@ -142,7 +108,7 @@ PLA_CHAROM
 Text Label 1900 4000 2    60   ~ 0
 PLA_FE
 $Comp
-L Conn_01x01 J2
+L conn:Conn_01x01 J2
 U 1 1 5A0C7874
 P 10750 5300
 F 0 "J2" H 10750 5400 50  0000 C CNN
@@ -153,7 +119,7 @@ F 3 "" H 10750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J3
+L conn:Conn_01x01 J3
 U 1 1 5A0C793C
 P 10750 5600
 F 0 "J3" H 10750 5700 50  0000 C CNN
@@ -164,7 +130,7 @@ F 3 "" H 10750 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J4
+L conn:Conn_01x01 J4
 U 1 1 5A0C797A
 P 10750 5900
 F 0 "J4" H 10750 6000 50  0000 C CNN
@@ -175,7 +141,7 @@ F 3 "" H 10750 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J5
+L conn:Conn_01x01 J5
 U 1 1 5A0C7AB0
 P 10750 6200
 F 0 "J5" H 10750 6300 50  0000 C CNN
@@ -198,7 +164,7 @@ JTAG
 Wire Notes Line
 	11000 4950 11000 6400
 $Comp
-L +3.3V #PWR03
+L power:+3.3V #PWR03
 U 1 1 5A0C804E
 P 3150 900
 F 0 "#PWR03" H 3150 750 50  0001 C CNN
@@ -209,7 +175,7 @@ F 3 "" H 3150 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR04
+L power:+5V #PWR04
 U 1 1 5A0C80E4
 P 750 900
 F 0 "#PWR04" H 750 750 50  0001 C CNN
@@ -220,7 +186,7 @@ F 3 "" H 750 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L device:C C1
 U 1 1 5A0C8111
 P 1050 1050
 F 0 "C1" H 1075 1150 50  0000 L CNN
@@ -231,7 +197,7 @@ F 3 "" H 1050 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 5A0C820D
 P 750 1450
 F 0 "#PWR05" H 750 1200 50  0001 C CNN
@@ -242,7 +208,7 @@ F 3 "" H 750 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L device:C C2
 U 1 1 5A0C8072
 P 2850 1050
 F 0 "C2" H 2875 1150 50  0000 L CNN
@@ -267,7 +233,7 @@ JTAG_TMS
 Text Label 6850 4650 0    60   ~ 0
 JTAG_TCK
 $Comp
-L C C3
+L device:C C3
 U 1 1 5A0C905D
 P 9600 2750
 F 0 "C3" H 9625 2850 50  0000 L CNN
@@ -278,7 +244,7 @@ F 3 "" H 9600 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 5A0C90C1
 P 9600 2900
 F 0 "#PWR06" H 9600 2650 50  0001 C CNN
@@ -315,7 +281,7 @@ PLA_VA12
 Text Label 4850 4200 2    60   ~ 0
 PLA_VA13
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 5A0CABE7
 P 5450 5150
 F 0 "#PWR07" H 5450 4900 50  0001 C CNN
@@ -356,15 +322,15 @@ NoConn ~ 2400 4900
 Text Notes 9150 2400 0    60   ~ 0
 Only 1 bypass cap due\nto space constraints
 Wire Wire Line
-	750  900  1150 900 
+	750  900  1050 900 
 Connection ~ 1050 900 
 Wire Wire Line
-	2750 900  3150 900 
+	2750 900  2850 900 
 Connection ~ 2850 900 
 Wire Wire Line
 	2850 1400 2850 1200
 Wire Wire Line
-	750  1400 2850 1400
+	750  1400 1050 1400
 Wire Wire Line
 	750  1400 750  1450
 Connection ~ 1950 1400
@@ -372,7 +338,7 @@ Wire Wire Line
 	1050 1200 1050 1400
 Connection ~ 1050 1400
 $Comp
-L +5V #PWR08
+L power:+5V #PWR08
 U 1 1 5A0CBA4B
 P 1500 2000
 F 0 "#PWR08" H 1500 1850 50  0001 C CNN
@@ -383,7 +349,7 @@ F 3 "" H 1500 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG09
+L power:PWR_FLAG #FLG09
 U 1 1 5A0CBA6C
 P 1500 2000
 F 0 "#FLG09" H 1500 2075 50  0001 C CNN
@@ -394,7 +360,7 @@ F 3 "" H 1500 2000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3V #PWR010
+L power:+3.3V #PWR010
 U 1 1 5A0C9098
 P 9600 2600
 F 0 "#PWR010" H 9600 2450 50  0001 C CNN
@@ -405,7 +371,7 @@ F 3 "" H 9600 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 5A0CBEB0
 P 2000 2000
 F 0 "#PWR011" H 2000 1750 50  0001 C CNN
@@ -416,7 +382,7 @@ F 3 "" H 2000 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG012
+L power:PWR_FLAG #FLG012
 U 1 1 5A0CBEE3
 P 2000 2000
 F 0 "#FLG012" H 2000 2075 50  0001 C CNN
@@ -427,7 +393,7 @@ F 3 "" H 2000 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L XC9536XL-10VQ44C U2
+L xc9536xl-10vq44c:XC9536XL-10VQ44C U2
 U 1 1 5A6F8821
 P 5850 3600
 F 0 "U2" H 5850 3500 60  0000 C CNN
@@ -447,7 +413,7 @@ NoConn ~ 4850 2700
 NoConn ~ 4850 3100
 NoConn ~ 4850 3300
 $Comp
-L +3V3 #PWR013
+L power:+3V3 #PWR013
 U 1 1 5A6F9301
 P 6300 2300
 F 0 "#PWR013" H 6300 2150 50  0001 C CNN
@@ -458,11 +424,11 @@ F 3 "" H 6300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 2400 6300 2400
+	5650 2400 5850 2400
 Wire Wire Line
 	6300 2400 6300 2300
 Wire Wire Line
-	5450 5050 6050 5050
+	5450 5050 5650 5050
 Wire Wire Line
 	5450 5050 5450 5150
 Connection ~ 5850 5050
@@ -471,14 +437,30 @@ Connection ~ 5850 2400
 Connection ~ 6050 2400
 NoConn ~ 6850 2900
 $Comp
-L AMS1117 U1
+L ams1117:AMS1117 U1
 U 1 1 5A6FA036
 P 1950 900
 F 0 "U1" H 2200 750 50  0000 C CNN
 F 1 "AMS1117" H 1700 1000 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2" H 1950 900 60  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 1950 900 60  0001 C CNN
 F 3 "" H 1950 900 60  0000 C CNN
 	1    1950 900 
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1050 900  1150 900 
+Wire Wire Line
+	2850 900  3150 900 
+Wire Wire Line
+	1950 1400 2850 1400
+Wire Wire Line
+	1050 1400 1950 1400
+Wire Wire Line
+	5850 5050 6050 5050
+Wire Wire Line
+	5650 5050 5850 5050
+Wire Wire Line
+	5850 2400 6050 2400
+Wire Wire Line
+	6050 2400 6300 2400
 $EndSCHEMATC
