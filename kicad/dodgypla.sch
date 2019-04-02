@@ -107,62 +107,14 @@ Text Label 2400 5300 0    60   ~ 0
 PLA_CHAROM
 Text Label 1900 4000 2    60   ~ 0
 PLA_FE
-$Comp
-L conn:Conn_01x01 J2
-U 1 1 5A0C7874
-P 10750 5300
-F 0 "J2" H 10750 5400 50  0000 C CNN
-F 1 "PAD_TCK" H 10750 5200 50  0000 C CNN
-F 2 "dodgyPLA_footprints:testpad_1.6mm" H 10750 5300 50  0001 C CNN
-F 3 "" H 10750 5300 50  0001 C CNN
-	1    10750 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:Conn_01x01 J3
-U 1 1 5A0C793C
-P 10750 5600
-F 0 "J3" H 10750 5700 50  0000 C CNN
-F 1 "PAD_TMS" H 10750 5500 50  0000 C CNN
-F 2 "dodgyPLA_footprints:testpad_1.6mm" H 10750 5600 50  0001 C CNN
-F 3 "" H 10750 5600 50  0001 C CNN
-	1    10750 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:Conn_01x01 J4
-U 1 1 5A0C797A
-P 10750 5900
-F 0 "J4" H 10750 6000 50  0000 C CNN
-F 1 "PAD_TDO" H 10750 5800 50  0000 C CNN
-F 2 "dodgyPLA_footprints:testpad_1.6mm" H 10750 5900 50  0001 C CNN
-F 3 "" H 10750 5900 50  0001 C CNN
-	1    10750 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:Conn_01x01 J5
-U 1 1 5A0C7AB0
-P 10750 6200
-F 0 "J5" H 10750 6300 50  0000 C CNN
-F 1 "PAD_TDI" H 10750 6100 50  0000 C CNN
-F 2 "dodgyPLA_footprints:testpad_1.6mm" H 10750 6200 50  0001 C CNN
-F 3 "" H 10750 6200 50  0001 C CNN
-	1    10750 6200
-	1    0    0    -1  
-$EndComp
-Text Label 10550 5300 2    60   ~ 0
+Text Label 10150 5600 2    60   ~ 0
 JTAG_TCK
-Text Label 10550 5600 2    60   ~ 0
+Text Label 10150 5700 2    60   ~ 0
 JTAG_TMS
-Text Label 10550 5900 2    60   ~ 0
+Text Label 10150 5800 2    60   ~ 0
 JTAG_TDO
-Text Label 10550 6200 2    60   ~ 0
+Text Label 10150 5900 2    60   ~ 0
 JTAG_TDI
-Text Notes 10400 5100 0    60   ~ 0
-JTAG
-Wire Notes Line
-	11000 4950 11000 6400
 $Comp
 L power:+3.3V #PWR03
 U 1 1 5A0C804E
@@ -220,12 +172,6 @@ F 3 "" H 2850 1050 50  0001 C CNN
 $EndComp
 Text Label 6850 4750 0    60   ~ 0
 JTAG_TDO
-Wire Notes Line
-	11000 6400 10050 6400
-Wire Notes Line
-	10050 6400 10050 4950
-Wire Notes Line
-	10050 4950 11000 4950
 Text Label 6850 4450 0    60   ~ 0
 JTAG_TDI
 Text Label 6850 4550 0    60   ~ 0
@@ -463,4 +409,57 @@ Wire Wire Line
 	5850 2400 6050 2400
 Wire Wire Line
 	6050 2400 6300 2400
+NoConn ~ 10650 5600
+NoConn ~ 10650 5700
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5CA3F9DB
+P 10850 5750
+F 0 "#PWR0101" H 10850 5600 50  0001 C CNN
+F 1 "+3.3V" H 10850 5890 50  0000 C CNN
+F 2 "" H 10850 5750 50  0001 C CNN
+F 3 "" H 10850 5750 50  0001 C CNN
+	1    10850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CA40C03
+P 10850 5950
+F 0 "#PWR0102" H 10850 5700 50  0001 C CNN
+F 1 "GND" H 10850 5800 50  0000 C CNN
+F 2 "" H 10850 5950 50  0001 C CNN
+F 3 "" H 10850 5950 50  0001 C CNN
+	1    10850 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 5900 10850 5900
+Wire Wire Line
+	10850 5900 10850 5950
+Wire Wire Line
+	10650 5800 10850 5800
+Wire Wire Line
+	10850 5800 10850 5750
+Text Notes 10300 5125 0    60   ~ 0
+JTAG
+Wire Notes Line
+	11025 5000 9650 5000
+Wire Notes Line
+	9650 5000 9650 6225
+Wire Notes Line
+	9650 6225 11025 6225
+Wire Notes Line
+	11025 6225 11025 5000
+$Comp
+L conn:Conn_02x04_Odd_Even J2
+U 1 1 5CA48D3C
+P 10350 5700
+F 0 "J2" H 10400 6017 50  0000 C CNN
+F 1 "JTAG" H 10400 5926 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 10350 5700 50  0001 C CNN
+F 3 "~" H 10350 5700 50  0001 C CNN
+	1    10350 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
