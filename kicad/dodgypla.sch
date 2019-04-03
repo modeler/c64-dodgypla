@@ -15,7 +15,7 @@ Comment3 "http://github.com/hackup/c64-dodgypla"
 Comment4 ""
 $EndDescr
 $Comp
-L conn:Conn_02x14_Counter_Clockwise J1
+L Connector_Generic:Conn_02x14_Counter_Clockwise J1
 U 1 1 5A0C74B0
 P 2100 4600
 F 0 "J1" H 2150 5300 50  0000 C CNN
@@ -452,7 +452,7 @@ Wire Notes Line
 Wire Notes Line
 	11025 6225 11025 5000
 $Comp
-L conn:Conn_02x04_Odd_Even J2
+L Connector_Generic:Conn_02x04_Odd_Even J2
 U 1 1 5CA48D3C
 P 10350 5700
 F 0 "J2" H 10400 6017 50  0000 C CNN
