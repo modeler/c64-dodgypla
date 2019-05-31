@@ -1,4 +1,4 @@
-PROJECT=dodgy-xcpla
+PROJECT=xcpla
 all: $(PROJECT).zip
 
 rename_old:
