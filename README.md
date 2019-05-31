@@ -5,7 +5,7 @@
 
 The XCPLA is a replacement for the PLA in older versions of the Commodore 64. It is my rendition of the [DodgyPLA by desater](https://github.com/desaster/c64-dodgypla) (see below). While the original version is made for self-etching, the XCPLA layout is optimized for professional board manufacturers.
 
-More information can be found in my [blog post](https://www.hackup.net/?p=2314&preview=true).
+More information can be found in my [blog post](https://www.hackup.net/2019/05/the-xcpla-yet-another-pla-replacement/).
 
 In hindsight, it would have been better to create a new repository for the XCPLA. But somehow I failed to do so in time, so here we are.
 
