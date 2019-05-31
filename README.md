@@ -1,5 +1,14 @@
-PLA replacement for C64.
+# PLA replacement for the C64
 
+## XCPLA
+![XCPLA picture](xcpla_shot.jpg)
+
+The XCPLA is a replacement for the PLA in older versions of the Commodore 64. It is my rendition of the [DodgyPLA by desater](https://github.com/desaster/c64-dodgypla) (see below). While the original version is made for self-etching, the XCPLA layout is optimized for professional board manufacturers.
+
+More information can be found in my [blog post](https://www.hackup.net/?p=2314&preview=true).
+
+
+## DodgyPLA
 ![DodgyPLA picture](dodgypla_shot.jpg)
 
 Based on the work by skoe:
