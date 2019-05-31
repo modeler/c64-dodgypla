@@ -7,6 +7,9 @@ The XCPLA is a replacement for the PLA in older versions of the Commodore 64. It
 
 More information can be found in my [blog post](https://www.hackup.net/?p=2314&preview=true).
 
+In hindsight, it would have been better to create a new repository for the XCPLA. But somehow I failed to do so in time, so here we are.
+
+There is no warranty whatsoever. **USE AT YOUR OWN RISK!**.
 
 ## DodgyPLA
 ![DodgyPLA picture](dodgypla_shot.jpg)
