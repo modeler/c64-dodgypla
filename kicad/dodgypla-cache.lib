@@ -1,15 +1,35 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_02x04_Odd_Even
+# ams1117_AMS1117
 #
-DEF Connector_Generic_Conn_02x04_Odd_Even J 0 40 Y N 1 F N
+DEF ams1117_AMS1117 U 0 40 Y Y 1 F N
+F0 "U" 250 -150 50 H V C CNN
+F1 "ams1117_AMS1117" -250 100 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -500 -200 500 200 0 0 0 N
+X GND/ADJ 1 0 -500 300 U 50 50 1 1 I
+X Vout 2 800 0 300 L 50 50 1 1 w
+X Vin 3 -800 0 300 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# conn_Conn_02x04_Odd_Even
+#
+DEF conn_Conn_02x04_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Connector_Generic_Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
+F1 "conn_Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_2x??_*
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
+ Pin_Header_Straight_2X*
+ Pin_Header_Angled_2X*
+ Socket_Strip_Straight_2X*
+ Socket_Strip_Angled_2X*
 $ENDFPLIST
 DRAW
 S -50 -195 0 -205 1 1 6 N
@@ -32,15 +52,16 @@ X Pin_8 8 300 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_02x14_Counter_Clockwise
+# conn_Conn_02x14_Counter_Clockwise
 #
-DEF Connector_Generic_Conn_02x14_Counter_Clockwise J 0 40 Y N 1 F N
+DEF conn_Conn_02x14_Counter_Clockwise J 0 40 Y N 1 F N
 F0 "J" 50 700 50 H V C CNN
-F1 "Connector_Generic_Conn_02x14_Counter_Clockwise" 50 -800 50 H V C CNN
+F1 "conn_Conn_02x14_Counter_Clockwise" 50 -800 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_2x??_*
+ Connector*:*2x??x*mm*
+ Connector*:*2x???Pitch*
 $ENDFPLIST
 DRAW
 S -50 -695 0 -705 1 1 6 N
@@ -100,21 +121,6 @@ X Pin_6 6 -200 100 150 R 50 50 1 1 P
 X Pin_7 7 -200 0 150 R 50 50 1 1 P
 X Pin_8 8 -200 -100 150 R 50 50 1 1 P
 X Pin_9 9 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# ams1117_AMS1117
-#
-DEF ams1117_AMS1117 U 0 40 Y Y 1 F N
-F0 "U" 250 -150 50 H V C CNN
-F1 "ams1117_AMS1117" -250 100 50 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-S -500 -200 500 200 0 0 0 N
-X GND/ADJ 1 0 -500 300 U 50 50 1 1 I
-X Vout 2 800 0 300 L 50 50 1 1 w
-X Vin 3 -800 0 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
