@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:dodgypla-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "DodgyPLA"
-Date "2019-09-20"
-Rev "2"
+Date "2019-10-14"
+Rev "3"
 Comp ""
 Comment1 "Commodore 64 PLA Replacement"
 Comment2 "Heavily based on: http://github.com/desaster/c64-dodgypla"
@@ -15,7 +15,7 @@ Comment3 "http://github.com/hackup/c64-dodgypla"
 Comment4 ""
 $EndDescr
 $Comp
-L conn:Conn_02x14_Counter_Clockwise J1
+L dodgypla-rescue:Conn_02x14_Counter_Clockwise-conn J1
 U 1 1 5A0C74B0
 P 2100 4600
 F 0 "J1" H 2150 5300 50  0000 C CNN
@@ -138,7 +138,7 @@ F 3 "" H 750 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C1
+L dodgypla-rescue:C-device C1
 U 1 1 5A0C8111
 P 1050 1050
 F 0 "C1" H 1075 1150 50  0000 L CNN
@@ -160,7 +160,7 @@ F 3 "" H 750 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C2
+L dodgypla-rescue:C-device C2
 U 1 1 5A0C8072
 P 2850 1050
 F 0 "C2" H 2875 1150 50  0000 L CNN
@@ -179,7 +179,7 @@ JTAG_TMS
 Text Label 6850 4650 0    60   ~ 0
 JTAG_TCK
 $Comp
-L device:C C3
+L dodgypla-rescue:C-device C3
 U 1 1 5A0C905D
 P 9150 2700
 F 0 "C3" H 9175 2800 50  0000 L CNN
@@ -342,7 +342,7 @@ U 1 1 5A6F8821
 P 5850 3600
 F 0 "U2" H 5850 3500 60  0000 C CNN
 F 1 "XC9536XL-10VQ44C" H 5850 3700 60  0000 C CNN
-F 2 "dodgyPLA_footprints:LQFP-44_10x10mm_Pitch0.8mm" H 5850 3450 60  0001 C CNN
+F 2 "Package_QFP:LQFP-44_10x10mm_P0.8mm" H 5850 3450 60  0001 C CNN
 F 3 "" H 5850 3450 60  0001 C CNN
 	1    5850 3600
 	1    0    0    -1  
@@ -450,7 +450,7 @@ Wire Notes Line
 Wire Notes Line
 	11025 6225 11025 5000
 $Comp
-L conn:Conn_02x04_Odd_Even J2
+L dodgypla-rescue:Conn_02x04_Odd_Even-conn J2
 U 1 1 5CA48D3C
 P 10350 5700
 F 0 "J2" H 10400 6017 50  0000 C CNN
@@ -461,7 +461,7 @@ F 3 "~" H 10350 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C4
+L dodgypla-rescue:C-device C4
 U 1 1 5D8174F5
 P 9500 2700
 F 0 "C4" H 9525 2800 50  0000 L CNN
@@ -472,7 +472,7 @@ F 3 "" H 9500 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C5
+L dodgypla-rescue:C-device C5
 U 1 1 5D817BCB
 P 9850 2700
 F 0 "C5" H 9875 2800 50  0000 L CNN
